@@ -1,4 +1,4 @@
-//Verbal Questions
+//Commit 1 - Verbal Questions
 
 //A parameter is the variable you want to change in a function
 //ex. const myFunction = (parameter) => {}
@@ -7,3 +7,16 @@
 
 //When you type console.log(value). It will show you the value in the console.
 //When you type return it will actually spit out the value in the program instead of resulting undefined. 
+
+//Commit 2 - Palindrome
+
+const isPalindrome = (word) => {
+	if (word === word.split('').reverse().join('')) {
+		return true;
+	}
+	else if (word !== word.split('').reverse().join('')) {
+		return false;
+	}
+};
+
+isPalindrome("anka");
