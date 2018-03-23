@@ -64,47 +64,61 @@
 
 //Commit 6 - Prime Numbers
 
-const checkPrime = (num) => {
+// const checkPrime = (num) => {
 
-	for (let i = 2; i < num; i++) {
-		if (num % i === 0) {
-			return false;
-		}
-	}
-	return value > 1;
-}
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return value > 1;
+// }
 
-checkPrime(7);
-//=> true b/c 7 is a prime number
+// checkPrime(7);
+// => true b/c 7 is a prime number
 
 // This loops though 97 and logs all prime numbers by calling on my previous function (included below)
-const checkPrime = (num) => {
+// const checkPrime = (num) => {
 
-	for (let i = 2; i < num; i++) {
-		if (num % i === 0) {
-			return false;
-		}
-	}
-	return num > 1;
-};
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i === 0) {
+// 			return false;
+// 		}
+// 	}
+// 	return num > 1;
+// };
 
-checkPrime(13);
+// checkPrime(13);
 
-const printPrimes = (value) => {
+// const printPrimes = (value) => {
   
-  for (let i = 0; i <= value; i++) {
-    if (checkPrime(i)) {
-      console.log(i);
-    }
-  }
+//   for (let i = 0; i <= value; i++) {
+//     if (checkPrime(i)) {
+//       console.log(i);
+//     }
+//   }
+// };
+
+// printPrimes(97);
+
+//Commit 7 - Insert Dash
+
+const insertDash = (number) => {
+
+let numberString = number.toString();
+
+
+console.log(numberString);
+
+
 };
 
-printPrimes(97);
+insertDash(454793);
 
 
 
-
-
+//check if a number is divisble by 2 and if the remainder is 0 then the number is odd.
+//
 
 
 
