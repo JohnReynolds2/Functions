@@ -108,7 +108,7 @@ const insertDash = (number) => {
 let numberString = number.toString();
 
 
-console.log(numberString);
+console.log(numberString.split(''));
 
 
 };
@@ -119,8 +119,18 @@ insertDash(454793);
 
 //check if a number is divisble by 2 and if the remainder is 0 then the number is odd.
 //
-
-
+//the code above has created the number given into a string which can then be made into an array
+//now that there is an array you can refer to each index individually
+//start a loop that loops through each index of the array and converts it back into a number
+//and then you can check to see if the number is even or odd
+//if you divide an even number by 2 there will not be a remainder.
+//if you divide an odd number by 2 there will be a remainder
+//if there is no remainder (even number) skip the index and move to the next one
+//if the number has a remainder you know it is odd,
+//there needs to be a loop that can go through and check anindex and next the next index 
+//if (even, even - skip), if (even, odd - skip), if (odd, even - skip), if (odd, odd - add "-" after 1st odd)
+//then join the array back into a single string
+//log the final string
 
 
 
