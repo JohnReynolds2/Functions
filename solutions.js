@@ -23,16 +23,26 @@
 
 //Commit 3 - Digit Sum
 
-const sumDigits = (number) => {
-	let numberString = number.toString();
-	let sum = 0
+// const sumDigits = (number) => {
+// 	let numberString = number.toString();
+// 	let sum = 0
 	
-	for (i = 0; i < numberString.length; i++) {
-	  sum += Number(numberString[i]); 
-	}
+// 	for (i = 0; i < numberString.length; i++) {
+// 	  sum += Number(numberString[i]); 
+// 	}
 	  
-	return (sum);
+// 	return (sum);
 	
-};
+// };
 
-sumDigits(42);
+// sumDigits(42);
+
+//Commit 4 - Pythagoras
+
+const calculateSide = (sideA, sideB) => {
+	let sideC = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+	
+	return (sideC);
+}
+
+calculateSide(8, 6);
