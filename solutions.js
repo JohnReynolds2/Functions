@@ -9,7 +9,7 @@
 //When you type return it will actually spit out the value in the program instead of resulting undefined. 
 
 //Commit 2 - Palindrome
-
+//Can't figure out how to check for capital letters
 // const isPalindrome = (word) => {
 // 	if (word === word.split('').reverse().join('')) {
 // 		return true;
@@ -39,10 +39,32 @@
 
 //Commit 4 - Pythagoras
 
-const calculateSide = (sideA, sideB) => {
-	let sideC = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+// const calculateSide = (sideA, sideB) => {
+// 	let sideC = Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
 	
-	return (sideC);
-}
+// 	return (sideC);
+// }
 
-calculateSide(8, 6);
+// calculateSide(8, 6);
+
+//Commit 5 - Sum Array
+
+
+const sumArray = (array) => {
+
+let sum = 0;
+
+	for (i = 0; i < array.length; i++) {
+		sum += array[i];
+	}
+	console.log(sum);
+
+};
+
+sumArray([1, 2, 3, 4, 5, 6]);
+
+
+
+
+
+
