@@ -10,13 +10,29 @@
 
 //Commit 2 - Palindrome
 
-const isPalindrome = (word) => {
-	if (word === word.split('').reverse().join('')) {
-		return true;
+// const isPalindrome = (word) => {
+// 	if (word === word.split('').reverse().join('')) {
+// 		return true;
+// 	}
+// 	else if (word !== word.split('').reverse().join('')) {
+// 		return false;
+// 	}
+// };
+
+// isPalindrome("anka");
+
+//Commit 3 - Digit Sum
+
+const sumDigits = (number) => {
+	let numberString = number.toString();
+	let sum = 0
+	
+	for (i = 0; i < numberString.length; i++) {
+	  sum += Number(numberString[i]); 
 	}
-	else if (word !== word.split('').reverse().join('')) {
-		return false;
-	}
+	  
+	return (sum);
+	
 };
 
-isPalindrome("anka");
+sumDigits(42);
