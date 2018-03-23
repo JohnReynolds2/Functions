@@ -49,19 +49,74 @@
 
 //Commit 5 - Sum Array
 
+// const sumArray = (array) => {
 
-const sumArray = (array) => {
+// let sum = 0;
 
-let sum = 0;
+// 	for (i = 0; i < array.length; i++) {
+// 		sum += array[i];
+// 	}
+// 	console.log(sum);
 
-	for (i = 0; i < array.length; i++) {
-		sum += array[i];
+// };
+
+// sumArray([1, 2, 3, 4, 5, 6]);
+
+//Commit 6 - Prime Numbers
+
+const checkPrime = (num) => {
+
+	for (let i = 2; i < num; i++) {
+		if (num % i === 0) {
+			return false;
+		}
 	}
-	console.log(sum);
+	return value > 1;
+}
 
+checkPrime(7);
+//=> true b/c 7 is a prime number
+
+// This loops though 97 and logs all prime numbers by calling on my previous function (included below)
+const checkPrime = (num) => {
+
+	for (let i = 2; i < num; i++) {
+		if (num % i === 0) {
+			return false;
+		}
+	}
+	return num > 1;
 };
 
-sumArray([1, 2, 3, 4, 5, 6]);
+checkPrime(13);
+
+const printPrimes = (value) => {
+  
+  for (let i = 0; i <= value; i++) {
+    if (checkPrime(i)) {
+      console.log(i);
+    }
+  }
+};
+
+printPrimes(97);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
